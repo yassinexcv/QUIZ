@@ -1,12 +1,22 @@
 #include <stdio.h>
 int main ()
 {
-	int repo=0,scor=0;
+	int repo=0,scor=0,tenta=0;
 	
 	printf("Bonjour petit genie tu es pret ?\n");
 	printf("choisi entre 3 un mammifere\n defi sur 3 point\n1:autruche\n2:chouve souris\n3:crocodile\n");
 	printf("attention : chaque repense faux ton resultat diminue\n");
 	scanf("%d",&repo);
+		while(repo != 2)
+		{ tenta++;
+				if(tenta==3)
+			{
+				printf("tu es perdu!!\n");
+				break;
+			}	
+		printf("reponse incorrecte reessayez une autre foi\n");
+		scanf("%d",&repo);
+		}
 	switch(repo)
 	{
 		case 1:
@@ -29,6 +39,17 @@ int main ()
 	
 	printf("choisi entre 3 un herbivore \n defi sur 3 point\n1:lapin\n2:ours\n3:faucon\n");
 	scanf("%d",&repo);
+			while(repo != 1)
+		{
+			 tenta++;
+				if(tenta==6)
+			{
+				printf("tu es perdu!!\n");
+				break;
+			}	
+		printf("reponse incorrecte reessayez une autre foi\n");
+		scanf("%d",&repo);
+		}
 	switch(repo)
 	{
 		case 1:
@@ -51,6 +72,17 @@ int main ()
 		
 	printf("choisi entre 3 un amphibiens \n defi sur 3 point\n1:singe\n2:escargot\n3:grenouille\n");
 	scanf("%d",&repo);
+			while(repo != 3)
+		{
+			 tenta++;
+				if(tenta==9)
+			{
+				printf("tu es perdu!!\n");
+				break;
+			}	
+		printf("reponse incorrecte reessayez une autre foi\n");
+		scanf("%d",&repo);
+		}
 	switch(repo)
 	{
 		case 1:
