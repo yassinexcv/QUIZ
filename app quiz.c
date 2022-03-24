@@ -105,4 +105,4 @@ int main ()
 	printf("votre score est :%d\n\n",scor);
 	
 	return 0;
-}
+}//pull
